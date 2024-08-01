@@ -157,13 +157,6 @@ section {
     gap: 5rem;
     height: 80vh;
 }
-  
-.section__pic-container {
-    display: flex;
-    height: 400px;
-    width: 400px;
-    margin: auto 0;
-}
 
 .logo-image {
     border: 2px solid black;
@@ -182,6 +175,7 @@ section {
 .section__text__p2 {
     font-size: 1.75rem;
     margin-bottom: 1rem;
+    width: 95vw;
 }
 
 .container{
@@ -208,7 +202,10 @@ section {
     height: 2rem;
 }
   
-  
+button {
+    font-family: inherit;
+}  
+
 .btn-container {
     display: flex;
     justify-content: center;
@@ -255,4 +252,45 @@ section {
   
 .btn-container {
     gap: 1rem;
+}
+
+#section-title {
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+}
+
+.card-container {
+    margin-top: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10rem;
+    justify-content: center;
+}
+
+.card {
+    width: 300px;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
+    margin: 25px;
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.card-content {
+    padding: 50px;
+}
+
+.card-content p {
+    color: black;
+}
+
+.product-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
