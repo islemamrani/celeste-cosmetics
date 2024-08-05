@@ -37,7 +37,7 @@
             </div>
         </div>
     </nav>
-    <section id="profile">
+    <section id="profile" class=".produits">
         <div class="section__text">
           <h1 class="title">Bienvenue sur, Céleste Cosmetics</h1>
           <div class="container">
@@ -46,6 +46,7 @@
           <div class="btn-container">
             <button
               class="btn btn-color-2"
+              onclick="location.href='./#produits'"
             >
                 Voir nos produits
             </button>
@@ -67,43 +68,72 @@
               onclick="location.href='#'"
             />
           </div>
+          <form class="form"
+          action="https://formsubmit.co/islemamranicontact@gmail.com"
+          method="POST">
+            <input name="Message" class="text-holder" type="text" placeholder="envoie-nous quelque chose" required>
+            <button type="submit" class="submit">Envoyer</button>
+          </form>
         </div>
     </section>
-    <section id="products">
-        <p id="section-title" class="title">Nos Produits</p>
-        <div class="card-container">
-            <div class="card">
-                <img src="assets/logo.jpg" alt="Product 1">
-                <div class="card-content">
-                    <div class="product-info">
-                        <h1>Product title</h1>
-                        <p>$30</p>
-                    </div>
-                    <p>Product description blablablabla</p>
-                </div>
+    <section id="produits">
+        <p id="section0-title" class="title">Nos Produits</p>
+        <div class="container">
+            <div class="product-card">
+              <div class="product-image">
+                <img src="assets/logo.jpg" alt="Product Image" />
+              </div>
+              <div class="product-details">
+                <h2 class="product-title">Gel douche</h2>
+                <h4 class="product-price">800 DA</h4>
+                <h3 class="description">Description</h3>
+                <p>Gel douche, exfoliant et nettoyant pour le corps.</p>
+                <button class="buy-btn">Acheter</button>
+                <button class="view-btn">Voir</button>
+              </div>
             </div>
-            <div class="card">
-                <img src="assets/logo.jpg" alt="Product 2">
-                <div class="card-content">
-                    <div class="product-info">
-                        <h1>Product title</h1>
-                        <p>$30</p>
-                    </div>
-                    <p>Product description blablablabla</p>
-                </div>
+            <div class="product-card">
+              <div class="product-image">
+                <img src="assets/logo.jpg" alt="Product Image" />
+              </div>
+              <div class="product-details">
+                <h2 class="product-title">Gaumage</h2>
+                <h4 class="product-price">400 DA</h4>
+                <h3 class="description">Description</h3>
+                <p>Il exfolie en douceur les peaux mortes et élimine le sébum.</p>
+                <button class="buy-btn">Acheter</button>
+                <button class="view-btn">Voir</button>
+              </div>
             </div>
-            <div class="card">
-                <img src="assets/logo.jpg" alt="Product 2">
-                <div class="card-content">
-                    <div class="product-info">
-                        <h1>Product title</h1>
-                        <p>$30</p>
-                    </div>
-                    <p>Product description blablablabla</p>
-                </div>
+            <div class="product-card">
+              <div class="product-image">
+                <img src="assets/logo.jpg" alt="Product Image" />
+              </div>
+              <div class="product-details">
+                <h2 class="product-title">Baume</h2>
+                <h4 class="product-price">350 DA</h4>
+                <h3 class="description">Description</h3>
+                <p>Un lifting naturel aux effets immédiats.</p>
+                <button class="buy-btn">Acheter</button>
+                <button class="view-btn">Voir</button>
+              </div>
             </div>
         </div>
     </section>
+    <!--<section id="à-propos">
+      <p id="section1-title" class="title">À propos</p>
+      <div class="about-info-container">
+        <div class="nature">
+          <img src="assets/nature.png" alt="Natural">
+          <h3>Nos produits sont à +97% naturels.</h3>
+        </div>
+        <div class="quality">
+          <img src="assets/quality.png" alt="Natural">
+          <h3>Produits de haute qualité assurés.</h3>
+        </div>
+      </div>
+    </section>-->
+
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="script.js"></script>
 </body>
