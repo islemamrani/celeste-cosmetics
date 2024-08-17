@@ -200,11 +200,17 @@ section {
     text-align: center;
 }
 
+.main-container {
+    height: calc(100vh - 10vh);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .products-container {   
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 30vh;
 }
 
 

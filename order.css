@@ -101,3 +101,10 @@ form input {
 select {
     outline: none;
 }
+
+.submit {
+    border: 1px solid black;
+    margin-top: 50px;
+    padding: 10px;
+    background-color: #A6C8A6;
+}
