@@ -203,7 +203,7 @@ section {
 }
 
 .main-container {
-    height: calc(100vh - 10vh);
+    height: calc(100vh - 95px);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -253,4 +253,24 @@ section {
 .product-type-button:hover {
     background-color: black;
     color: white;
+}
+
+.about-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-para {
+    max-height: 20vh;
+    font-size: 45px;
+    width: 80vw;
+    text-align: center;
+}
+
+#icons {
+    color: #A6C8A6;
+    font-size: 70px;
 }
