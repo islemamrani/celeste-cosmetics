@@ -3,138 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="mediaqueries.css"/>
     <title>Céleste Cosmetics</title>
-    <link rel="icon" href="assets/logo.jpg">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="media.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav id="desktop-nav">
-        <div class="logo">Céleste Cosmetics</div>
-        <div>
-            <ul class="nav-links">
+    <header>
+        <nav id="desktop-nav">
+            <p class="logo">Céleste Cosmetics</p>
+            <ul>
                 <li><a href="#produits">Produits</a></li>
-                <li><a href="#à-propos">À propos</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#à-propos">À Propos</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="order.html" id="order">Commandez</a></li>
             </ul>
-        </div>
-    </nav>
-    <nav id="hamburger-nav">
-        <div class="logo">Céleste Cosmetics</div>
-        <div class="hamburger-menu">
-            <div class="hamburger-icon" onclick="toggleMenu()">
+        </nav>
+        <nav id="hamburger-nav">
+            <p class="logo">Céleste Cosmetics</p>
+            <div class="hamburger-menu">
+              <div class="hamburger-icon" onclick="toggleMenu()">
                 <span></span>
                 <span></span>
                 <span></span>
-            </div>
-            <div class="menu-links">
+              </div>
+              <div class="menu-links">
                 <li><a href="#produits" onclick="toggleMenu()">Produits</a></li>
-                <li><a href="#à-propos" onclick="toggleMenu()">À propos</a></li>
-                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-            </div>
-        </div>
-    </nav>
-    <section id="profile" class=".produits">
-        <div class="section__text">
-          <h1 class="title">Bienvenue sur, Céleste Cosmetics</h1>
-          <div class="container">
-            <p class="section__text__p2"><span id="autotyped"></span></p>
-          </div>
-          <div class="btn-container">
-            <button
-              class="btn btn-color-2"
-              onclick="location.href='./#produits'"
-            >
-                Voir nos produits
-            </button>
-            <button class="btn btn-color-1" onclick="location.href='./#contact'">
-                Contactez-nous
-            </button>
-          </div>
-          <div id="socials-container">
-            <img
-              src="assets/instagram.png"
-              alt="Notre instagram"
-              class="icon"
-              onclick="location.href='https://www.instagram.com/doha_rym/'"
-            />
-            <img
-              src="assets/facebook.png"
-              alt="Notre facebook"
-              class="icon"
-              onclick="location.href='#'"
-            />
-          </div>
-          <form class="form"
-          action="https://formsubmit.co/ace68d24845ae6234b5a37a1d0b123d2"
-          method="POST">
-            <input name="Message" class="text-holder" type="text" placeholder="envoie-nous quelque chose" required>
-            <button type="submit" class="submit">Envoyer</button>
-          </form>
-        </div>
-    </section>
-    <section id="produits">
-        <p id="section0-title" class="title">Nos Produits</p>
-        <div class="container">
-            <div class="product-card">
-              <div class="product-image">
-                <img src="assets/logo.jpg" alt="Product Image" />
-              </div>
-              <div class="product-details">
-                <h2 class="product-title">Gel douche</h2>
-                <h4 class="product-price">800 DA</h4>
-                <h3 class="description">Description</h3>
-                <p>Gel douche, exfoliant et nettoyant pour le corps.</p>
-                <button class="buy-btn">Acheter</button>
-                <button class="view-btn">Voir</button>
+                <li><a href="#à-propos" onclick="toggleMenu()">À Propos</a></li>
+                <li><a href="#" onclick="toggleMenu()">Contact</a></li>
+                <li><a href="order.html" id="order" onclick="toggleMenu()">Commandez</a></li>
               </div>
             </div>
-            <div class="product-card">
-              <div class="product-image">
-                <img src="assets/logo.jpg" alt="Product Image" />
-              </div>
-              <div class="product-details">
-                <h2 class="product-title">Gaumage</h2>
-                <h4 class="product-price">400 DA</h4>
-                <h3 class="description">Description</h3>
-                <p>Il exfolie en douceur les peaux mortes et élimine le sébum.</p>
-                <button class="buy-btn">Acheter</button>
-                <button class="view-btn">Voir</button>
-              </div>
+        </nav>
+    </header>
+    <main>
+        <section class="home">
+            <div class="centered-content">
+                <p class="title">Bienvenue sur, Céleste Cosmetics</p>
+                <p class="typed"><span id="element"></span></p>
             </div>
-            <div class="product-card">
-              <div class="product-image">
-                <img src="assets/logo.jpg" alt="Product Image" />
-              </div>
-              <div class="product-details">
-                <h2 class="product-title">Baume</h2>
-                <h4 class="product-price">350 DA</h4>
-                <h3 class="description">Description</h3>
-                <p>Un lifting naturel aux effets immédiats.</p>
-                <button class="buy-btn">Acheter</button>
-                <button class="view-btn">Voir</button>
-              </div>
+        </section>
+        <section id="produits">
+            <p class="intro">Explorez Céleste</p>
+            <p class="section-title">&mdash;Nos Produits&mdash;</p>
+                <div class="products-container">
+                        <div class="product-card">
+                            <img src="Assets/image.jpg" alt="Type de produit">
+                            <button class="product-type-button">Douches</button>
+                        </div>
+                        <div class="product-card">
+                            <img src="Assets/image2.jpg" alt="Product type">
+                            <button class="product-type-button">Soins Du Corps</button>
+                        </div>
+                </div>
             </div>
-        </div>
-    </section>
-    <!--<section id="à-propos">
-      <p id="section1-title" class="title">À propos</p>
-      <div class="about-info-container">
-        <div class="nature">
-          <img src="assets/nature.png" alt="Natural">
-          <h3>Nos produits sont à +97% naturels.</h3>
-        </div>
-        <div class="quality">
-          <img src="assets/quality.png" alt="Natural">
-          <h3>Produits de haute qualité assurés.</h3>
-        </div>
-      </div>
-    </section>-->
-
+        </section>
+        </section>
+    </main>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script src="script.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
