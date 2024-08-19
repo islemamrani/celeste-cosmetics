@@ -11,7 +11,18 @@
 
 body {
     font-family: 'Playfair Display', sans-serif;
- }
+}
+
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transition: all 1s ease;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+}
 
 a {
     color: inherit;
@@ -154,7 +165,7 @@ header {
     font-size: 20px;
 }
 
-.home {
+#home {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -190,7 +201,7 @@ header {
 
 section {
     height: 100vh;
-    padding-top: 2vh;
+    min-height: fit-content;
 }
 
 .section-title {
@@ -202,8 +213,16 @@ section {
     text-align: center;
 }
 
+#produits {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 .main-container {
-    height: calc(100vh - 95px);
+    overflow: hidden;
+    flex-grow: 1;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -273,4 +292,31 @@ section {
 #icons {
     color: #A6C8A6;
     font-size: 70px;
+}
+
+.icons {
+    font-size: 5rem;
+    text-align: center;
+}
+
+.about-container {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.adv {
+    border: 1px solid black;
+    padding: 1.2rem;
+    min-height: 13rem;
+    background-color: #A6C8A6;
+    border-radius: 60px;
+}
+
+.adv-p {
+    text-align: center;
+    font-size: 2rem;
 }

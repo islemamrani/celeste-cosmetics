@@ -6,6 +6,7 @@
     <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css"/>
     <link rel="stylesheet" href="mediaqueries.css"/>
+    <script defer src="app.js"></script>
     <title>Céleste Cosmetics</title>
 </head>
 <body>
@@ -37,15 +38,17 @@
         </nav>
     </header>
     <main>
-        <section class="home">
+        <section class="hidden" id="home">
             <div class="centered-content">
                 <p class="title">Bienvenue sur, Céleste Cosmetics</p>
                 <p class="typed"><span id="element"></span></p>
             </div>
         </section>
-        <section id="produits">
-            <p class="intro">Explorez Céleste</p>
-            <p class="section-title">&mdash;Nos Produits&mdash;</p>
+        <section class="hidden" id="produits">
+            <div class="heading">
+                <p class="intro">Explorez Céleste</p>
+                <p class="section-title">&mdash;Nos Produits&mdash;</p>
+            </div>
             <div class="main-container">
                 <div class="products-container">
                     <div class="product-card">
@@ -60,10 +63,23 @@
                 </div>
             </div>
         </section>
-        <section id="à-propos">
-            <p class="section-title">&mdash;À Propos&mdash;</p>
+        <section class="hidden" id="à-propos">
+            <div class="heading">
+                <p class="section-title">&mdash;À Propos&mdash;</p>
+            </div>
             <div class="about-container">
-                <p class="info-para"><i id="icons" class="lni lni-quotation"></i> Nous sommes une marque de cosmétiques algérienne qui souhaite fabriquer des produits efficaces et naturels pour une meilleure hygiène et style de vie. <i id="icons" class="lni lni-quotation"></i> &#45;Doha Rym</p>
+                <div class="adv">
+                    <p class="icons"><i class="lni lni-leaf"></i></p>
+                    <p class="adv-p">Nos produits sont naturels</p>
+                </div>
+                <div class="adv">
+                    <p class="icons"><i class="lni lni-crown"></i></p>
+                    <p class="adv-p">Nous faisons de notre mieux pour garantir des produits de haute qualité</p>
+                </div>
+                <div class="adv">
+                    <p class="icons"><i class="lni lni-delivery"></i></p>
+                    <p class="adv-p">Nos produits vous parviendront en moins de 96h</p>
+                </div>
             </div>
         </section>
     </main>

@@ -10,8 +10,24 @@
     }
 }
 
-@media screen and (max-width: 450px) {
-  .main-container {
-    height: calc(100vh - 149px);
+@media screen and (max-width: 600px) {
+  .section-title {
+    font-size: 2.5rem;
+  }
+
+  .product-card img {
+    width: 250px;
+  }
+}
+
+@media screen and (max-width: 381px) {
+  .section-title {
+    font-size: 1.8rem;
+  }
+  #home .title {
+    font-size: 2.5rem;
+  }
+  #home .typed #element {
+    font-size: 1.3rem;
   }
 }
